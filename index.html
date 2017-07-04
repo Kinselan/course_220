@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+  <script type="text/javascript" src="logic.js"></script> 
+</head>
+<body>
+<script id="post" type="text/x-handlebars">
+  {{#each posts}}
+  <article>
+    <h1>{{title}}</h1>
+    <p><time>Posted on {{published}}</time></p>
+    {{{body}}}
+    {{#if tags}}
+    <h2>Tags</h2>
+    {{#each tags}}
+    {{> tag}}
+    {{/each}}
+    {{else}}
+    <h2>Not tagged</h2>
+    {{/if}}
+  </article>
+  {{/each}}
+</script>
+
+<script id="tag" type="text/x-handlebars" >
+  <p>{{this}}</p>
+</script>
+  
+</body>
+</html>

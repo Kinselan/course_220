@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HandleBars</title>
+  <script type="text/javascript" src="handlebars-v4.0.10.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="logic.js"></script>
+</head>
+<body>
+
+
+
+<script id="posts" type="text/x-handlebars">
+  {{#each posts}}
+  <article>
+    <h1>{{title}}</h1>
+    <p><time>Posted on {{published}}</time></p>
+    {{{body}}}
+    <footer>
+      <p>
+        {{#if tags}}
+        Tags:
+        {{#each tags}}
+        {{>tag}}
+        {{/each}}
+        {{else}}
+        Not tagged
+        {{/if}}
+      </p>
+    </footer>
+  </article>
+  {{/each}}
+</script>
+</body>
+</html>

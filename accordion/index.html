@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Accordion</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="accordion.js"></script>
+</head>
+<body>
+<main>
+  <h1>Type a key to toggle the accordion with</h1>
+  <form>
+    <input type="text" id="key" maxlength="1">
+    <input type="submit" value="set">
+  </form>
+
+  <a href="#" id="toggle">Toggle Accordion</a>
+  <div id="accordion">
+    <p>Start by adding a submit event to the form. Remember to receive the event argument in order to prevent the form from submitting. Within the callback, read in the character that was entered in to the text input. In order to use it to monitor for a keypress, you will need to convert it to a character code. To do that, we're going to use a little bit of built-in Javascript to convert it. If you've set your input's value to a variable named key, for example, you can call key.charCodeAt(0) to get the character code that represents that character. That number will be used to determine whether or not the right key was pressed in our keypress event.</p>
+  </div>
+</main>
+</body>
+</html>

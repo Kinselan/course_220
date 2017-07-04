@@ -1,0 +1,248 @@
+@import url("reset.css");
+
+body {
+  font: normal 24px Helvetica, Arial, sans-serif;
+}
+
+header {
+  padding: 30px 15px;
+  background: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+  text-align: center;
+  color: #ffffff;
+}
+
+header h1 {
+  font-size: 36px;
+  padding: 0 0 20px 0;
+}
+
+header p {
+  font-size: 18px;
+  color: #cdbfe3;
+  font-weight: lighter;
+}
+
+.panel {
+  padding: 15px;  
+  border: 1px solid #e3e3e3;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.toolbar {
+  display: none;
+  width: 1200px;
+  margin: 0 auto 30px;
+}
+
+.contacts {
+  width: 1100px;
+  padding: 30px;
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+.contacts p {
+  padding: 0 0 10px 0;
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-block;
+  width: 140px;
+  height: 50px;
+  padding: 5px 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #563d7c;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #563d7c;
+}
+
+.toolbar .btn {
+  float: left;
+  margin: 0 0 0 150px;
+}
+
+.toolbar .search {
+  float: right;
+  margin: 0 150px 0 0;
+}
+
+.toolbar p,
+.toolbar ul,
+.toolbar div,
+.toolbar li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 2px 0 0 0;
+}
+
+.toolbar h4,
+.toolbar ul {
+  text-align: center;
+}
+
+.toolbar div {
+  margin: 0 0 0 100px;
+}
+
+.toolbar ul {
+  margin: 0 0 0 25px;
+}
+
+.toolbar li {
+  font-size: 16px;
+}
+
+
+.search {
+  width: 215px;
+  font-size: 14px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  display: inline-block;  
+  box-sizing: border-box;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer small {
+  display: inline-block;
+  font-size: 14px;
+  padding: 15px 0 0 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.list {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.list li {
+  display: inline-block;
+  width: 24.5%;
+}
+
+.person h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0 25px;
+}
+
+.person dl {
+  font-size: 15px;
+  padding: 5px 0 20px;
+}
+
+.person dt {
+  font-weight: bold;
+}
+
+.person dd:first-of-type {
+  margin: 0 0 5px 0;
+}
+
+.person a {
+  text-decoration: none;
+  color: #563d7c;
+  width: auto;
+  height: auto;
+  margin: 0 15px 20px 0;
+}
+
+.person dt:last-of-type ~ dd {
+  display: inline;
+  color: #0066cc;
+}
+
+.form {
+  display: none;
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form h2 {
+  font-weight: normal;
+  padding: 30px 0 20px;
+}
+
+.form fieldset {
+  border-top: 1px solid #ccc;
+  padding: 20px 150px;
+}
+
+.form dl {
+  overflow: hidden;
+  margin: 0 0 30px 0;
+}
+
+.form dt {
+  font-size: 16px;
+  text-align: right;
+  width: 200px;
+  font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+  display: inline-block;
+  width: 550px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 5px 8px;
+  font-size: 15px;
+  height: 35px;
+  box-sizing: border-box;
+}
+
+.tag {
+  width: 550px;
+}
+
+.tag input[type='checkbox'] {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.form input[type="submit"],
+.form .cancel {
+  width: 260px;
+  float:right;
+  text-align: center;
+}
+
+.form .cancel {
+  margin-left: 30px;
+  padding: 15px 0 ;
+}
+
+.form dd {
+  float: right;
+}
+
+.form dt, .form dd {
+  display: inline-block;
+}

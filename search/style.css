@@ -1,0 +1,40 @@
+body {
+  background: #EEE196;
+}
+
+#container {
+  margin: 0 auto;
+  width: 800px;
+  background: #ffffff;
+}
+
+#container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main {
+  float: right;
+  width: 70%;
+}
+
+aside {
+  padding: 50px 0 0 0;
+}
+
+aside li {
+  list-style: none;
+}
+
+main li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+main li:hover {
+  background: #04ff00;
+}
+main ul {
+  padding: 0;
+}

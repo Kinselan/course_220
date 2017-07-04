@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Manager</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+ 
+  <script type="text/javascript" src="javascript/contact.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Contact Manager</h1>
+    <p>Using Backbone.js, Localstorage, RequireJS, Handlebar and Bootstrap</p>
+  </header>
+
+  <main>
+    <div id="toolbar" class="toolbar panel">
+      <button class="btn add">Add Contact</button>
+      <div>
+        <h4>Filter Categories</h4>
+        <ul>
+          <li>
+            <label>
+              Family
+              <input type="checkbox" name="tag" value="family">
+            </label>
+          </li>
+          <li>
+            <label>
+              Work
+              <input type="checkbox" name="tag" value="work">
+            </label>
+          </li>
+          <li>
+            <label>
+              Friend
+              <input type="checkbox" name="tag" value="friend">
+            </label>
+          </li>
+          <li>
+            <label>
+              Acquaintance
+              <input type="checkbox" name="tag" value="acquaintance">
+            </label>
+          </li>
+        </ul>
+      </div>
+      <input type="text" class="search" id="search" placeholder="search">
+    </div>
+
+    <form class="form submit">
+      <h2>Create Contact</h2>
+      <fieldset>
+        <dl>
+          <dt>Full name:</dt>
+          <dd><input type="text" name="name" required></dd>
+        </dl>
+        <dl>
+          <dt>Email address:</dt>
+          <dd><input type="text" name="email" required></dd>
+        </dl>
+        <dl>
+          <dt>Telephone number:</dt>
+          <dd><input type="text" name="phone" required></dd>
+        </dl>
+
+        <dl>
+          <dt>Tags:</dt>
+          <dd class="tag">
+            <label>
+              Family
+              <input type="checkbox" name="tag" value="family">
+            </label>
+            <label>
+              Work
+              <input type="checkbox" name="tag" value="work">
+            </label>
+            <label>
+              Friend
+              <input type="checkbox" name="tag" value="friend">
+            </label>
+            <label>
+              Acquaintance
+              <input type="checkbox" name="tag" value="acquaintance">
+            </label>
+          </dd>
+        </dl>
+          <a class="btn cancel">Cancel</a>
+          <input class="btn" type="submit" value="Submit">
+          
+      </fieldset>
+    </form> 
+
+    <form class="form edit">
+      <h2>Edit Contact</h2>
+      <fieldset>
+        <dl>
+          <dt>Full name:</dt>
+          <dd><input type="text" name="name"></dd>
+        </dl>
+        <dl>
+          <dt>Email address:</dt>
+          <dd><input type="text" name="email"></dd>
+        </dl>
+        <dl>
+          <dt>Telephone number:</dt>
+          <dd><input type="text" name="phone"></dd>
+        </dl>
+
+        <dl>
+          <dt>Tags:</dt>
+          <dd class="tag">
+            <label>
+              Family
+              <input type="checkbox" name="tag" value="family">
+            </label>
+            <label>
+              Work
+              <input type="checkbox" name="tag" value="work">
+            </label>
+            <label>
+              Friend
+              <input type="checkbox" name="tag" value="friend">
+            </label>
+            <label>
+              Acquaintance
+              <input type="checkbox" name="tag" value="acquaintance">
+            </label>
+          </dd>
+        </dl>
+          <a class="btn cancel">Cancel</a>
+          <input class="btn" type="submit" value="Submit">
+      </fieldset>
+    </form> 
+  </main>
+
+  <script type="text/x-handlebars" id="lists">
+    {{#if lists}}
+      <ul class="list">
+        {{#each lists}}
+          {{> list}}
+        {{/each}}
+      </ul>
+    {{else}}
+      <div class="contacts panel">
+        <p>There is no contacts</p>
+        <button class="btn add">Add Contact</button>
+      </div>
+    {{/if}}
+  </script>
+
+  <script type="text/x-handlebars" id="list">
+    <li class="person">
+      <h3>{{name}}</h3>
+      <dl>
+        <dt>Phone Number:</dt>
+        <dd>{{phone}}</dd>
+        <dt>Email:</dt>
+        <dd>{{email}}</dd>
+        <dt>Tags:</dt>
+        {{#each tags}}
+        <dd>{{this}}</dd>
+        {{/each}}
+      </dl>
+      <a href="#" id="edit" class="btn">Edit</a>
+      <a href="#" id="delete" class="btn">Delete</a>
+    </li>    
+  </script>
+
+  <footer>
+    <small>Developed by <a href="https://www.devsaran.com/">Devsaran.com</a> and <a href="https://www.239listing.com">239 Listing Real Estate</a>.</small>
+  </footer>
+</body>
+</html>

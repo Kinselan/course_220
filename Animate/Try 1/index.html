@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="animate.js"></script>
+</head>
+<body>
+<main>
+  <div id="container">
+  </div>
+
+  <a href="#" id="animate">Start</a> | <a href="#" id="stop">Stop</a>
+  <form action="" method="get">
+    <h1>Add a shape</h1>
+    <h2>Type</h2>
+    <ul>
+      <li>
+        <label>
+          <input type="radio" name="shape" value="square">
+          Square
+        </label>   
+      </li>
+
+      <li>
+        <label>
+          <input type="radio" name="shape" value="circle">
+          Circle
+        </label>        
+      </li>
+
+      <li>
+        <label>
+          <input type="radio" name="shape" value="star">
+          Star
+        </label>        
+      </li>
+    </ul>
+
+
+
+
+    <dl>
+      <dt>Starting Point</dt>
+      <dd><input type="number" placeholder="x:" name="start_x"></dd>
+      <dd><input type="number" placeholder="y:" name="start_y"></dd>
+    </dl>
+
+    <dl>
+      <dt>Ending Point</dt>
+      <dd><input type="number" placeholder="x:" name="end_x"></dd>
+      <dd><input type="number" placeholder="y:" name="end_y"></dd>
+    </dl>
+
+    <label>
+      Duration
+      <input type="number" name="duration" value="250">
+    </label>
+
+    <input type="submit" value="Add">
+
+  </form>
+  
+
+  
+</main>
+</body>
+</html>

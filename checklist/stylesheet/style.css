@@ -1,0 +1,54 @@
+body {
+  font: normal 18px Helvetica, Arial, sans-serif;
+  color: #82D0DE;
+  background: #36251E;
+}
+
+main {
+  background: #0C6084;
+  width: 400px;
+  padding: 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h1 , h2 {
+  font-size: 24px;
+}
+
+label {
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+input { 
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  height: 30px;
+  padding: 5px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background: #516034;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  box-shadow: none;
+  border: 1px solid #000;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+
+li + li {
+  border-top: 1px solid #ccc;
+}

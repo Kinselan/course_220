@@ -1,0 +1,48 @@
+body {
+  background: #5BCCB3;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #389581;
+}
+
+main {
+  width: 300px;
+  padding: 25px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+input {
+  display: block;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 5px 8px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background: linear-gradient(to bottom, #CC183E 0%, #780E24 100%);
+  border: none;
+  height: 30px;
+  margin: 20px auto;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+
+
+li + li {
+  border-top: 1px solid #ccc;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  padding: 10px 0;
+}
